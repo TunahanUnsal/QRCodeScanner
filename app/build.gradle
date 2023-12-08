@@ -68,7 +68,9 @@ dependencies {
     implementation libs.appcompat
     implementation libs.material
     implementation libs.android.gif.drawable
-    implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
+    implementation libs.circle.menu
+    implementation libs.core
+    implementation libs.zxing.android.embedded
     testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="icons">
-        <item>@drawable/baseline_qr_code_24</item>
-        <item>@drawable/baseline_qr_code_24</item>
-        <item>@drawable/baseline_qr_code_24</item>
-        <item>@drawable/baseline_qr_code_24</item>
-        <item>@drawable/baseline_qr_code_24</item>
+        <item>@drawable/search</item>
+        <item>@drawable/add</item>
+        <item>@drawable/restore</item>
+        <item>@drawable/wifi</item>
+        <item>@drawable/scanner</item>
+
     </array>
     <array name="colors">
         <item>@android:color/holo_blue_light</item>
