@@ -21,8 +21,8 @@
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="0dp"
-        app:layout_constraintGuide_percent="0.2"
         android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.2"
         android:orientation="horizontal" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -30,37 +30,52 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8"
-         />
+        app:layout_constraintGuide_percent="0.7" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/ssid"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@drawable/bg"
+        android:hint="@string/ssid"
         android:maxLines="1"
-        android:hint="@string/create_hint"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        android:textColorHint="@color/gray"
         android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg"
+        android:layout_marginTop="40dp"
+        android:hint="@string/password"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/ssid" />
 
     <ImageButton
         android:id="@+id/create_button"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:background="@drawable/bg"
+        android:contentDescription="@string/share"
         android:padding="15dp"
         android:scaleType="fitCenter"
         android:src="@drawable/wand"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        android:contentDescription="@string/share" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"

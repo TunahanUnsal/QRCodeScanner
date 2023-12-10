@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">QR Scope</string>
-    <string name="create_hint">URL</string>
+    <string name="create_hint">www.example.com</string>
     <string name="share">Share</string>
+    <string name="ssid">SSID</string>
+    <string name="password">Password</string>
 </resources>

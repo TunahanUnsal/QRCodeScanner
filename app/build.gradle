@@ -13,8 +13,8 @@ android {
         applicationId "com.ezdream.qrscanner"
         minSdk 24
         targetSdk 34
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 3
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -22,6 +22,21 @@ android {
     buildFeatures{
         viewBinding true
         dataBinding true
+    }
+
+    signingConfigs{
+        debug{
+            storeFile file("/Users/tunaunsal/Doc/private_key.pepk")
+            storePassword "789123"
+            keyAlias "ezdream"
+            keyPassword "789123"
+        }
+        release{
+            storeFile file("/Users/tunaunsal/Doc/private_key.pepk")
+            storePassword "789123"
+            keyAlias "ezdream"
+            keyPassword "789123"
+        }
     }
 
     buildTypes {
@@ -32,13 +47,7 @@ android {
             buildConfigField("String", "API_KEY", '"abc123456"')
             buildConfigField("String", "API_URL", '"example-debug.com"')
         }
-        tst {
-            debuggable = true
-            applicationIdSuffix '.tst'
-            minifyEnabled false
-            buildConfigField("String", "API_KEY", '"abc123456"')
-            buildConfigField("String", "API_URL", '"example-test.com"')
-        }
+
         release {
             debuggable = false
             minifyEnabled false
